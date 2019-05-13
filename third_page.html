@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Quantiphi's election portal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/vote.js"></script>
+	
+
+</head>
+<body>
+	<div class="container2">
+		<nav class="navbar navbar-default sec_head">
+		<div class="container-fluid">
+		
+		<div class="navbar-header">
+			<a class="navbar-brand nav_logo" href="https://www.quantiphi.com"><img id="img1"src="img/logo.png"></a>
+		</div>
+		</div>
+		</nav>
+		<div class="vote_page">
+		<div class="row up_row">
+			<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 head">
+			<h1>Department: Facilities</h1>
+			<p >This are the various department of Quantiphi's which have taken the stand to lead the fresher's team during their trainning period.</p>
+			<p>The freshers are requested to vote for their favourite leadership.</p>
+			<button id="next">MOVE ON TO THE NEXT DEPARTMENT</button>
+			</div>
+		</div>
+			
+		</div>
+		<p class="choose"><b>Choose your mascot for this department</b><font color="grey">  (hover over each mascot to know it’s meaning)</font></p>
+		<div class="img_list" style="">
+		<div class="row">
+			
+			<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 img1"><img class="myimage" id="i1" src="img/oyster.png" hspace="50" onclick="myselection('i1'); return false;" ></img><p id="p1" style="text-align:center;">World is my <b>Oyster</b></p><span class="tooltiptext1">We generate pearls from source. We can teach you the easy and fast way of development and deployment. Our team works flows scrum development format. Vote us to learn the adaptive methods. </span></div>
+			<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 img2"><img class="myimage"  id="i2" src="img/cat.png" hspace="50" onclick="myselection('i2'); return false;" /><p id="p2" style="text-align:center;">A <b>Cat’s</b> Meow</p><span class="tooltiptext1">Our team works with everyone so to reduce the time of development. Join our team to learn multitasking skills and to develop the product in a flashy way.</span></div>
+			<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 img3"><img class="myimage" id="i3" src="img/whale.png" hspace="50" onclick="myselection('i3'); return false;" /><p id="p3" style="text-align:center;">A <b>Whale</b> of a time</p><span class="tooltiptext1">We create We Dominate and We Delivery. Join us to learn more about leadership and management. We teach you to how understand the clients and to fast delivery the product.</span></div>
+			<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 img4"><img class="myimage"  id="i4" id="" src="img/ele.png" hspace="50" onclick="myselection('i4'); return false;" /><p id="p4" style="text-align:center;"><b>Elephant</b> in the room</p><span class="tooltiptext1">Our team is as strong as elephant. Strength is the key of our team. Vote us so that we can spread our technical strength with you and help you to design your success. </span></div>
+			<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 img5"><img class="myimage"  id="i5" src="img/fish.png" hspace="50" onclick="myselection('i5'); return false;" /><p id="p5" style="text-align:center;">Dead <b>Fish</b></p><span class="tooltiptext1">We start from where everbody stops. We generate milestones from the dead code and deploy the products at the earliest.</span></div>
+			<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 img6"><img class="myimage"  id="i6" src="img/goose.png" hspace="50" onclick="myselection('i6'); return false;" /><p id="p6" style="text-align:center;">Wild <b>Goose</b> Chase</p><span class="tooltiptext1">My work/the attributes initiatives is not having direction and needs greater mentorship and leadership</span></div>
+		</div>
+		</div>
+
+		<div id="show" style="visibility:hidden;">
+		<div class="container-fluid">
+			<div class="row" style="width:100%;">
+			
+			<!--<submit type="button" id="next" >MOVE ON TO THE NEXT DEPARTMENT</submit>-->
+			<div class="col-sm-5">
+			<div id="res">
+			<p class="rating"><b>Overall Rating for Facilities</b><font style="color:grey;"> (1 - lowest,5 - highest)</font></p>
+			<fieldset class="rate">
+    		<input type="radio" id="star5" name="rat" value="5" onclick="button_enable();"/><label class = "full" for="star5" title="Awesome - 5 stars">  <font id="comment" ></font></label>
+    		<!--<input type="radio" id="star4half" name="rat" value="4 and a half" onclick="button_enable();"/><label class="half" for="star4half" title="Very good - 4.5 stars"></label>-->
+    		<input type="radio" id="star4" name="rat" value="4" onclick="button_enable();" /><label class = "full" for="star4" title="Very good - 4 stars"></label>
+    		<!--<input type="radio" id="star3half" name="rat" value="3 and a half" onclick="button_enable();"/><label class="half" for="star3half" title="Good - 3.5 stars"></label>-->
+    		<input type="radio" id="star3" name="rat" value="3" onclick="button_enable();"/><label class = "full" for="star3" title="Pretty Good- 3 stars"></label>
+    		<!--<input type="radio" id="star2half" name="rat" value="2 and a half"  onclick="button_enable();"/><label class="half" for="star2half" title="Need to Improve - 2.5 stars"></label>-->
+    		<input type="radio" id="star2" name="rat" value="2" onclick="button_enable();" /><label class = "full" for="star2" title="Bad - 2 stars"></label>
+    		<!--<input type="radio" id="star1half" name="rat" value="1 and a half" onclick="button_enable();"" /><label class="half" for="star1half" title="Bad - 1.5 stars"></label>-->
+    		<input type="radio" id="star1" name="rat" value="1" onclick="button_enable();"/><label class = "full" for="star1" title="Very Bad - 1 star"></label>
+    		<!--<input type="radio" id="starhalf" name="rat" value="half" onclick="button_enable();"/><label class="half" for="starhalf" title="Very Bad - 0.5 stars"></label>-->
+    		
+			</fieldset>
+
+			<b id="sel"style="width:500px;"><p>Share Your Reason For Selecting  <font id="team" style="color:red;""></font></p></b>
+
+			<fieldset style="width:250px;">
+			<input type="checkbox" class="r1" id="1"name="rea1" value="reason1" onchange="button_enable();"/><label for="1" class="t1">Great team spirit</label><br>
+			<input type="checkbox" class="r1" id="2"name="rea2" value="reason2" onchange="button_enable();"/><label for="2" class="t1">Best Leadership</label><br>
+			<input type="checkbox" class="r1" id="3"name="rea3" value="reason4" onchange="button_enable();"/><label for="3" class="t1">Management is perfect</label><br>
+			<input type="checkbox" class="r1" id="4"name="rea4" value="reason5" onchange="button_enable();"/><label for="4" class="t1">Equal work distribution</label><br>
+			</fieldset>
+			</div>
+			</div>
+
+
+			<div class="col-sm-3">
+			<div id="many">
+			<b><p class="more">Any More Reasons?</p></b>
+			<input type="textbox" class="textline">
+			<input type="textbox" class="textline">
+			<input type="textbox" class="textline">
+			<input type="textbox" class="textline">
+			<input type="textbox" class="textline">
+			<input type="textbox" class="textline">
+			</div>
+			</div>
+
+			
+			<div class="col-sm-4">
+			<div id="sug">
+			<b><p class="suggest">Suggestions</p></b>
+			<textarea style="margin-right: 10%;" class="text_area" rows="7" cols="15"></textarea>
+			</div>
+			</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
